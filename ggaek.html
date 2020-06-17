@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    @charset "UTF-8";
+
+    body {
+      font-family: source-sans-pro;
+      background-color: #ffffff;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      font-style: normal;
+      font-weight: 200;
+    }
+
+    /* Navigation */
+    header {
+      width: 100%;
+      height: 5%;
+      background-color: #ffffff;
+    }
+    nav {
+      float: left;
+      width: 45%;
+      text-align: left;
+      margin-left: 25px;
+      display : inline-block;
+    }
+
+    header nav ul {
+      list-style: none;
+      float: right;
+    }
+
+    nav ul li {
+      float: left;
+      color: #FFFFFF;
+      font-size: 14px;
+      text-align: left;
+      margin-left: 50px;
+      margin-right:50px;
+      letter-spacing: 2px;
+      font-weight: bold;
+      transition: all 0.3s linear;
+    }
+    ul li a {
+      color: #000000;
+      text-decoration: none;s
+    }
+    ul li:hover a {
+      color: #2C9AB7;
+    }
+
+  .about {
+    background-color: #f6f3ef;
+    width:100%;
+    height:100%;
+    float: left;
+  }
+
+  .wrap {
+    width: 100%;
+    height: 40%;
+    float: left;
+  }
+
+  *{margin:0;padding:0;}
+  ul,li{list-style:none;}
+  #slide{height:300px;position:relative;overflow:hidden;}
+  #slide ul{width:400%;height:100%;transition:1s;}
+  #slide ul:after{content:"";display:block;clear:both;}
+  #slide li{float:left;width:25%;height:100%;}
+  #slide li:nth-child(1){background:#faa;}
+  #slide li:nth-child(2){background:#ffa;}
+  #slide li:nth-child(3){background:#faF;}
+  #slide li:nth-child(4){background:#aaf;}
+  #slide input{display:none;}
+  #slide label{display:inline-block;vertical-align:middle;width:10px;height:10px;border:2px solid #666;background:#fff;transition:0.3s;border-radius:50%;cursor:pointer;}
+  #slide .pos{text-align:center;position:absolute;bottom:10px;left:0;width:100%;text-align:center;}
+  #pos1:checked~ul{margin-left:0%;}
+  #pos2:checked~ul{margin-left:-100%;}
+  #pos3:checked~ul{margin-left:-200%;}
+  #pos4:checked~ul{margin-left:-300%;}
+  #pos1:checked~.pos>label:nth-child(1){background:#666;}
+  #pos2:checked~.pos>label:nth-child(2){background:#666;}
+  #pos3:checked~.pos>label:nth-child(3){background:#666;}
+  #pos4:checked~.pos>label:nth-child(4){background:#666;}
+
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+  <nav>
+    <img src="images/logo.png" width="100" height="48" alt="">
+      <ul>
+        <li><a href="menu1.html">잎채소</a></li>
+        <li><a href="menu2.html">열매채소</a></li>
+        <li><a href="menu3.html">재배상식</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <article class="wrap">
+    <h2>모종 키우기</h2>
+  </article>
+
+<section class="about">
+  <div id="slide">
+   <input type="radio" name="pos" id="pos1" checked>
+   <input type="radio" name="pos" id="pos2">
+   <input type="radio" name="pos" id="pos3">
+   <ul>
+     <li><img src="ggaek1.jpg"></li>
+     <li><img src="ggaek2.jpg"></li>
+     <li><img src="ggaek3.jpg"></li>
+   </ul>
+   <p class="pos">
+     <label for="pos1"></label>
+     <label for="pos2"></label>
+     <label for="pos3"></label>
+   </p>
+ </div>
+
+</section>
+
+<article class="wrap">
+  <h2>수확 때까지 키우기</h2>
+</article>
+
+
+<section class="about">
+  <div id="slide">
+   <input type="radio" name="pos" id="pos1" checked>
+   <input type="radio" name="pos" id="pos2">
+   <input type="radio" name="pos" id="pos3">
+   <ul>
+     <li><img src="ggaek5.jpg"></li>
+     <li><img src="ggaek6.jpg"></li>
+     <li><img src="ggaek7.jpg"></li>
+   </ul>
+   <p class="pos">
+     <label for="pos1"></label>
+     <label for="pos2"></label>
+     <label for="pos3"></label>
+   </p>
+ </div>
+
+</section>
+
+</body>
+</html>
